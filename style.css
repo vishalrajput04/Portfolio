@@ -1,0 +1,262 @@
+:root {
+    --text: #eee;
+    --muted: #bbb;
+    --accent: #57d6ff;
+    --pink: #ff7ab6;
+    --bg: #111426;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--text);
+    background:
+        radial-gradient(circle at top left, #57d6ff35, transparent 30%),
+        radial-gradient(circle at bottom right, #ff7ab635, transparent 30%),
+        linear-gradient(135deg, #111426, #25203c);
+    line-height: 1.6;
+}
+
+.hero,
+.intro,
+.section {
+    padding: 60px max(20px, 8vw);
+}
+
+.hero {
+    text-align: center;
+}
+
+.hero h1,
+.section h2,
+.hello {
+    color: transparent;
+    background: linear-gradient(90deg, var(--accent), white, var(--pink));
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.hero h1 {
+    font-size: clamp(2.5rem, 7vw, 5rem);
+}
+
+.tagline {
+    color: var(--accent);
+    font-weight: bold;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px 22px;
+    padding: 14px;
+    background: linear-gradient(90deg, #57d6ffbb, #ff7ab6bb);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar a {
+    color: #111426;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.navbar a:hover {
+    color: white;
+    transform: translateY(-2px);
+}
+
+.intro {
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.intro > div:first-child {
+    max-width: 650px;
+}
+
+.intro h2 {
+    font-size: clamp(2rem, 5vw, 4rem);
+    line-height: 1.2;
+    margin: 15px 0;
+}
+
+.intro p:not(.hello) {
+    color: var(--muted);
+    font-size: 1.1rem;
+}
+
+.profile img {
+    width: min(350px, 75vw);
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #ffffff30;
+    box-shadow: 0 0 40px #57d6ff35;
+    transition: .4s;
+}
+
+.profile img:hover {
+    transform: scale(1.05) rotate(2deg);
+}
+
+.btn,
+button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 22px;
+    border: 0;
+    border-radius: 10px;
+    color: #111426;
+    background: linear-gradient(90deg, var(--accent), var(--pink));
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn:hover,
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px #57d6ff40;
+}
+
+.section {
+    border-top: 1px solid #ffffff15;
+}
+
+.section h2 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 25px;
+}
+
+.section > p {
+    max-width: 900px;
+    color: var(--muted);
+    margin-bottom: 15px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    padding: 25px;
+    border: 1px solid #ffffff20;
+    border-radius: 16px;
+    background: #ffffff0d;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: var(--accent);
+    box-shadow: 0 15px 35px #0004;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: var(--accent);
+}
+
+.card p {
+    color: var(--muted);
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.skills span {
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 1px solid #ffffff25;
+    background: linear-gradient(135deg, #ffffff12, #ffffff06);
+    transition: .3s;
+}
+
+.skills span:hover {
+    transform: translateY(-4px);
+    background: linear-gradient(90deg, var(--accent), var(--pink));
+    color: #111426;
+}
+
+.contact form {
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 15px;
+}
+
+input,
+textarea {
+    margin-top: 5px;
+    padding: 12px;
+    border: 1px solid #ffffff30;
+    border-radius: 8px;
+    outline: none;
+    color: white;
+    background: #0003;
+    font: inherit;
+}
+
+textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px #57d6ff25;
+}
+
+#confirmationMsg {
+    color: var(--accent);
+    margin-top: 15px;
+}
+
+footer {
+    padding: 18px;
+    text-align: center;
+    background: linear-gradient(90deg, var(--accent), var(--pink));
+    color: #111426;
+    font-weight: bold;
+}
+
+@media (max-width: 700px) {
+    .intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile {
+        order: -1;
+    }
+
+    .navbar {
+        gap: 8px 14px;
+    }
+}
