@@ -8,3 +8,27 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+(function () {
+  emailjs.init({
+    publicKey: "YafjgJ7Wdom3uWua4"
+  });
+})();
+
+document.getElementById("contact-form").addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  emailjs.sendForm(
+    "service_0521iog",
+    "template_hi0f6qu",
+    this
+  )
+  .then(() => {
+    alert("Message sent successfully!");
+    this.reset();
+  })
+  .catch((error) => {
+    console.log("FAILED...", error);
+    alert("Message failed to send.");
+  });
+});
