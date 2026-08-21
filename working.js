@@ -24,7 +24,7 @@ document.getElementById("contact-form").addEventListener("submit", function (eve
     this
   )
   .then(() => {
-    alert("Message sent successfully!");
+    alert("Thanks for Contact!");
     this.reset();
   })
   .catch((error) => {

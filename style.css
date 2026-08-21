@@ -202,7 +202,7 @@ textarea:focus {
     margin-top: 15px;
 }
 footer {
-    padding: 18px;
+    padding: 10px;
     text-align: center;
     background: linear-gradient(90deg, var(--accent), var(--pink));
     color: #111426;
