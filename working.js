@@ -54,7 +54,7 @@ function getFormattedDate() {
     day: 'numeric'
   });
 }
-document.getElementById('greeting').innerHTML = `${getGreeting()}! <br> Welcome to my Web Profile`;
+document.getElementById('greeting').innerHTML = `${getGreeting()}! <br>Welcome to my Web Profile`;
 document.getElementById('current-date').textContent = `Today's ${getFormattedDate()}`;
 
 //Time funtion
