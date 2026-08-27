@@ -5,7 +5,7 @@
     --pink: #ff7ab6;
     --bg: #111426;
 }
-* {
+*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -41,8 +41,17 @@ body {
 .hero h1 {
     font-size: clamp(2.5rem, 7vw, 5rem);
 }
-.tagline {
-    color: var(--accent);
+.clock-box {
+    text-align: right;
+    right: 0px;
+    color: white;
+
+    font-family: Arial, sans-serif;
+    z-index: 1000;
+}
+
+#time {
+    font-size: 20px;
     font-weight: bold;
 }
 .navbar {
