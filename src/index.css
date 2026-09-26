@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background:
+    radial-gradient(circle at top left, #38bdf820, transparent 30%),
+    radial-gradient(circle at bottom right, #8b5cf620, transparent 30%),
+    linear-gradient(135deg, #0b1120, #111827);
+  color: #f8fafc;
+}
+
+::selection {
+  background: #38bdf8;
+  color: #0b1120;
+}

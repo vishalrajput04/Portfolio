@@ -1,182 +1,34 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Vishal Chauhan - MCA student, Software Developer and Full Stack Developer. Explore my projects, skills and portfolio.">
-    <meta name="keywords"
-        content="Vishal Chauhan, Software Developer, Full Stack Developer, Web Developer, MCA Student, Portfolio">
-    <meta name="author" content="Vishal Chauhan">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header class="hero">
-        <div class="clock-box">
-            <p id="time"></p>
-        </div>
-            <h2 id="greeting"></h2>
-            <p id="current-date"></p>
-        <h1>Vishal Chauhan</h1>
-        <p> Software Developer | AI Enthusiast </p>
-    </header>
-    <nav class="navbar" aria-label="Main navigation">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-        <a href="VishalChauhan_Resume.pdf" target="_blank">Resume</a>
-        <a href="https://github.com/vishalrajput04" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/vishal-chauhan-86134b253/" target="_blank">LinkedIn</a>
-    </nav>
-    <main>
-        <section class="intro">
-            <div>
-                <p class="hello">Hey everyone!</p>
-                <h2>I'm Vishal & I love building modern web applications.</h2>
-                <p>
-                    I enjoy creating responsive, user-friendly and practical
-                    software solutions using modern web technologies.
-                </p>
-                <a href="#projects" class="btn">View My Projects</a>
-            </div>
-            <div class="profile">
-                <img src="Profile.jpg" alt="Vishal Chauhan - Software Developer">
-            </div>
-        </section>
-        <section id="about" class="section">
-            <h2>About Me</h2>
-            <p>
-                I'm an MCA final year student and Software Developer with hands-on
-                experience in software and web development. I enjoy building
-                modern, scalable and user-friendly applications that solve
-                real-world problems.
-            </p>
-          <p>
-    I have experience with full-stack technologies, version control tools like
-    Git and GitHub, and AI-powered development tools such as GitHub Copilot,
-    Codex, Cursor, VS Code, and IntelliJ IDEA.
-    
-    <br><br>
-    I also have knowledge of Java and SQL databases and enjoy learning new and
-    emerging technologies to improve my technical skills and gain practical
-    experience.
-    
-    <br><br>
-    Currently, I am learning how machine learning models work, how to implement
-    them, and how different algorithms can be used to solve real-world problems.
-    I am particularly interested in Artificial Intelligence, Generative AI,
-    and AI-powered applications.
-</p>
-        </section>
-        <section id="projects" class="section">
-            <h2>Projects</h2>
-            <div class="projects">
-                <article class="card">
-                    <h3>Amazon Clone</h3>
-                    <p>
-                        An e-commerce website inspired by Amazon with
-                        responsive UI and modern web technologies.<br>
-                        <a href="https://vishalrajput04.github.io/amazon-clone/"style="color: inherit;font-weight: bold;">Live</a>
-                    </p>
-                </article>
-                <article class="card">
-                    <h3>Portfolio Website</h3>
-                    <p>
-                        A responsive personal portfolio website to showcase
-                        my skills, projects and experience.
-                    </p>
-                </article>
-                <article class="card">
-                    <h3>E-Commerce Website</h3>
-                    <p>
-                        A modern e-commerce project focused on user-friendly
-                        design and practical functionality.
-                    </p>
-                </article>
-            </div>
-        </section>
-       <section id="skills" class="section">
-    <h2>Tech Stack</h2>
-    <h3>Frontend development</h3><br>
-    <div class="skills">
-       <span>JavaScript</span>
-        <span>bootstrap</span>
-        <span>React.js</span>
-    </div>
-    <br>
-    <h3>Backend Technology</h3><br>
-    <div class="skills">
-        <span>Node.js</span>
-        <span>Express.js</span>
-        <span>REST API</span>
-    </div>
-    <br>
-    <h3>Programming Languages</h3><br>
-    <div class="skills">
-        <span>Java</span>
-        <span>Python</span>
-    </div>
-    <br>
-    <h3>Database System</h3><br>
-    <div class="skills">
-        <span>MongoDB</span>
-        <span>MySQL</span>
-    </div>
-    <br>
-    <h3>Tools & Version Control</h3><br>
-    <div class="skills">
-        <span>Git</span>
-        <span>GitHub</span>
-        <span>VS Code</span>
-        <span>IntelliJ IDEA</span>
-    </div>
-    <br>
-    <h3>AI & Emerging Technologies</h3><br>
-    <div class="skills">
-        <span>Machine learning Models</span>
-        <span>Generative AI</span>
-        <span>GitHub Copilot</span>
-        <span>ChatGPT-Codex</span>
-        <span>Cloude</span>
-    </div>
-</section>
-        <section id="contact" class="section contact">
-    <h2>Contact Me</h2>
-    <form id="contact-form">
-        <label for="name">Name</label>
-        <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Enter your name"
-            required
-        >
-        <label for="email">Email</label>
-        <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Enter your email"
-            required
-        >
-        <label for="message">Message</label>
-        <textarea
-            id="message"
-            name="message"
-            placeholder="Type your message..."
-            required
-        ></textarea>
-        <button type="submit">Send Message</button>
-    </form>
-    <p id="confirmationMsg"></p>
-</section>
-    </main>
-    <footer>
-        <p>&copy; 2026 Vishal Chauhan. All rights reserved.</p>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-<script src="working.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <meta
+      name="description"
+      content="Vishal Chauhan - MCA student and Full Stack Developer. Explore my projects, skills and portfolio."
+    />
+
+    <meta
+      name="keywords"
+      content="Vishal Chauhan, Full Stack Developer, Software Developer, Web Developer, React, Node.js, MongoDB, Portfolio"
+    />
+
+    <meta
+      name="author"
+      content="Vishal Chauhan"
+    />
+
+    <title>Vishal Chauhan | Full Stack Developer</title>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
