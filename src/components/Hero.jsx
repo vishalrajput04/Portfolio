@@ -63,10 +63,11 @@ const Hero = () => {
 
       {/* Main Hero */}
       <div className="mx-auto mt-10 flex max-w-7xl flex-col-reverse items-center justify-between gap-8 md:mt-12 md:flex-row md:gap-12">
+        {/* Hero Content */}
         <div className="max-w-2xl text-center md:text-left">
           <p className="font-semibold text-sky-400">Hey everyone!</p>
 
-          <h2 className="mt-2 text-3xl font-bold leading-tight md:text-5xl">
+          <h2 className="mt-2 bg-gradient-to-r from-sky-400 via-indigo-400 to-violet-400 bg-clip-text text-2xl font-bold leading-snug text-transparent md:text-4xl">
             I'm Vishal, a Full Stack Developer passionate about building modern
             web applications.
           </h2>
@@ -83,6 +84,7 @@ const Hero = () => {
           </a>
         </div>
 
+        {/* Profile Image */}
         <div className="shrink-0">
           <img
             src={profileImage}

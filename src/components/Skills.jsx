@@ -53,7 +53,7 @@ const Skills = () => {
         <div className="space-y-10">
           {skillGroups.map((group) => (
             <div key={group.title}>
-              <h3 className="mb-4 text-xl font-semibold text-white">
+              <h3 className="mb-4 bg-gradient-to-r from-sky-400 to-violet-400 bg-clip-text text-xl font-semibold text-transparent">
                 {group.title}
               </h3>
 
